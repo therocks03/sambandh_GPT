@@ -1,4 +1,4 @@
-const API = "https://YOUR-BACKEND.onrender.com/api";
+const API = "https://therocks03.github.io/sambandh_GPT";
 const CLINIC_ID = "clinic_1";
 
 /* Navigation */
