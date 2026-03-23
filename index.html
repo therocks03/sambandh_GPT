@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Sambandh AI CRM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+
+  <div class="sidebar">
+    <h2>Sambandh</h2>
+    <a onclick="showPage('dashboard')">Dashboard</a>
+    <a onclick="showPage('patients')">Patients</a>
+    <a onclick="showPage('churn')">ChurnAI</a>
+    <a onclick="showPage('admin')">Admin</a>
+  </div>
+
+  <!-- Main -->
+
+  <div class="main">
+
+```
+<!-- Dashboard -->
+<div id="dashboard" class="page">
+  <h2>Dashboard</h2>
+  <div class="cards">
+    <div>Total Patients: <span id="totalPatients">0</span></div>
+  </div>
+</div>
+
+<!-- Patients -->
+<div id="patients" class="page" style="display:none">
+  <h2>Patients</h2>
+
+  <input id="name" placeholder="Name">
+  <input id="phone" placeholder="Phone">
+  <button onclick="addPatient()">Add</button>
+
+  <table>
+    <tbody id="patientTable"></tbody>
+  </table>
+</div>
+
+<!-- Churn -->
+<div id="churn" class="page" style="display:none">
+  <h2>ChurnAI</h2>
+  <button onclick="runChurn()">Run AI</button>
+  <table>
+    <tbody id="churnTable"></tbody>
+  </table>
+</div>
+
+<!-- Admin -->
+<div id="admin" class="page" style="display:none">
+  <h2>Admin Panel</h2>
+  <div>Total Clinics: <span id="totalUsers"></span></div>
+  <div>Revenue: ₹<span id="totalRevenue"></span></div>
+  <button onclick="runGlobalAI()">Run Global AI</button>
+
+  <table>
+    <tbody id="userTable"></tbody>
+  </table>
+</div>
+```
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
